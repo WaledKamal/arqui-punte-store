@@ -1,0 +1,27 @@
+header{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+._nav{
+    display: flex;
+}
+
+._nav li{
+    margin-left: 30px;
+}
+
+._active{
+    color: #FB6D3A;
+    position: relative;
+    font-weight: bold;
+}
+._active::after{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    content: '•';
+}
