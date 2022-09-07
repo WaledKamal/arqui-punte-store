@@ -1,5 +1,4 @@
-import { useEffect } from 'react';
-import Cart from '../cart/cart';
+import CartIcon from '../../assets/CartIcon';
 import './header.css'
 const logo = require('../../assets/logo.png');
 
@@ -34,7 +33,9 @@ const Header = () => {
                     ))}
                 </ul>
             </div>
-            <Cart ></Cart>
+            <div className="_sideNav">
+                <CartIcon itemLength={5}></CartIcon>
+            </div>
         </header>
     )
 }
